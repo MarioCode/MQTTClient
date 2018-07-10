@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AFC6255D203BA5BC8C2386E /* Pods_MQTTClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CEA3BED402F1971D45C08 /* Pods_MQTTClient.framework */; };
+		8D59DA2720F4ACF80042E4AC /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59DA2620F4ACF80042E4AC /* MessageTableViewCell.swift */; };
+		8D9549F020F4C15800C883DB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9549EF20F4C15800C883DB /* Extension.swift */; };
 		8DD7CA4220F37DAD00101065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4120F37DAD00101065 /* AppDelegate.swift */; };
-		8DD7CA4420F37DAD00101065 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4320F37DAD00101065 /* ViewController.swift */; };
+		8DD7CA4420F37DAD00101065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4320F37DAD00101065 /* MainViewController.swift */; };
 		8DD7CA4720F37DAE00101065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4520F37DAE00101065 /* Main.storyboard */; };
 		8DD7CA4920F37DAF00101065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4820F37DAF00101065 /* Assets.xcassets */; };
 		8DD7CA4C20F37DAF00101065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4A20F37DAF00101065 /* LaunchScreen.storyboard */; };
+		8DD7CA5420F388CC00101065 /* MqttManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CA5320F388CC00101065 /* MqttManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC4E963E018009D36C9CF61 /* Pods-MQTTClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTClient/Pods-MQTTClient.release.xcconfig"; sourceTree = "<group>"; };
+		717CEA3BED402F1971D45C08 /* Pods_MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CAA70F1B6F9002094F86EA2 /* Pods-MQTTClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTClient/Pods-MQTTClient.debug.xcconfig"; sourceTree = "<group>"; };
+		8D59DA2620F4ACF80042E4AC /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		8D9549EF20F4C15800C883DB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8DD7CA3E20F37DAD00101065 /* MQTTClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD7CA4120F37DAD00101065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DD7CA4320F37DAD00101065 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DD7CA4320F37DAD00101065 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8DD7CA4620F37DAE00101065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DD7CA4820F37DAF00101065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD7CA4B20F37DAF00101065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DD7CA4D20F37DAF00101065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DD7CA5320F388CC00101065 /* MqttManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFC6255D203BA5BC8C2386E /* Pods_MQTTClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D9549F120F4E16300C883DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CA4520F37DAE00101065 /* Main.storyboard */,
+				8DD7CA4A20F37DAF00101065 /* LaunchScreen.storyboard */,
+				8DD7CA4820F37DAF00101065 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		8DD7CA3520F37DAD00101065 = {
 			isa = PBXGroup;
 			children = (
 				8DD7CA4020F37DAD00101065 /* MQTTClient */,
 				8DD7CA3F20F37DAD00101065 /* Products */,
+				AB49A2804639F5501DAA525D /* Pods */,
+				9BC4B432966EFFC33B08C548 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +78,31 @@
 			isa = PBXGroup;
 			children = (
 				8DD7CA4120F37DAD00101065 /* AppDelegate.swift */,
-				8DD7CA4320F37DAD00101065 /* ViewController.swift */,
-				8DD7CA4520F37DAE00101065 /* Main.storyboard */,
-				8DD7CA4820F37DAF00101065 /* Assets.xcassets */,
-				8DD7CA4A20F37DAF00101065 /* LaunchScreen.storyboard */,
+				8DD7CA4320F37DAD00101065 /* MainViewController.swift */,
+				8DD7CA5320F388CC00101065 /* MqttManager.swift */,
+				8D9549EF20F4C15800C883DB /* Extension.swift */,
+				8D59DA2620F4ACF80042E4AC /* MessageTableViewCell.swift */,
+				8D9549F120F4E16300C883DB /* Resources */,
 				8DD7CA4D20F37DAF00101065 /* Info.plist */,
 			);
 			path = MQTTClient;
+			sourceTree = "<group>";
+		};
+		9BC4B432966EFFC33B08C548 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				717CEA3BED402F1971D45C08 /* Pods_MQTTClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB49A2804639F5501DAA525D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CAA70F1B6F9002094F86EA2 /* Pods-MQTTClient.debug.xcconfig */,
+				0DC4E963E018009D36C9CF61 /* Pods-MQTTClient.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DD7CA5020F37DAF00101065 /* Build configuration list for PBXNativeTarget "MQTTClient" */;
 			buildPhases = (
+				2C20DBFD41384BC80389D986 /* [CP] Check Pods Manifest.lock */,
 				8DD7CA3A20F37DAD00101065 /* Sources */,
 				8DD7CA3B20F37DAD00101065 /* Frameworks */,
 				8DD7CA3C20F37DAD00101065 /* Resources */,
+				BA83946B4D9C3F5C0AC8FE8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +139,11 @@
 				TargetAttributes = {
 					8DD7CA3D20F37DAD00101065 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,12 +178,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C20DBFD41384BC80389D986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MQTTClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA83946B4D9C3F5C0AC8FE8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MQTTClient/Pods-MQTTClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MQTTClient/Pods-MQTTClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8DD7CA3A20F37DAD00101065 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD7CA4420F37DAD00101065 /* ViewController.swift in Sources */,
+				8D9549F020F4C15800C883DB /* Extension.swift in Sources */,
+				8DD7CA4420F37DAD00101065 /* MainViewController.swift in Sources */,
+				8D59DA2720F4ACF80042E4AC /* MessageTableViewCell.swift in Sources */,
+				8DD7CA5420F388CC00101065 /* MqttManager.swift in Sources */,
 				8DD7CA4220F37DAD00101065 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,11 +372,13 @@
 		};
 		8DD7CA5120F37DAF00101065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CAA70F1B6F9002094F86EA2 /* Pods-MQTTClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RA8RP8Z7ML;
 				INFOPLIST_FILE = MQTTClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +392,13 @@
 		};
 		8DD7CA5220F37DAF00101065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DC4E963E018009D36C9CF61 /* Pods-MQTTClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RA8RP8Z7ML;
 				INFOPLIST_FILE = MQTTClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
