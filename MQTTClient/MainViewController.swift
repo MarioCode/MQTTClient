@@ -44,6 +44,10 @@ class MainViewController: UIViewController {
         
         messageTextField.setBottomBorder()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
 
     func setupButtonStyle(button: UIButton, alpha: CGFloat, isEnabled: Bool) {
         button.alpha = alpha
@@ -59,7 +63,13 @@ class MainViewController: UIViewController {
         switch sender.tag {
         case 0:
             if !isConnected {
-                MqttManager.shared.connect(host: "broker.hivemq.com", port: 1883, username: "123", password: "123", cleanSession: true)
+                receivedMessages.removeAll()
+                tableView.reloadData()
+                MqttManager.shared.connect(host: MqttSettings.shared.host,
+                                           port: Int(MqttSettings.shared.port)!,
+                                           username: MqttSettings.shared.username,
+                                           password: MqttSettings.shared.password,
+                                           cleanSession: MqttSettings.shared.cleanSession)
             }
         case 1:
             if isConnected {
@@ -182,7 +192,7 @@ extension MainViewController: MqttManagerDelegate {
         setupButtonStyle(button: disconnectButton, alpha: 0.5, isEnabled: false)
         currentTopic = nil
         messageTextField.text = ""
-        countSubscriptions.text = "My subsciptions (0))"
+        countSubscriptions.text = "My subsciptions (0)"
         editingMessage(true)
     }
     

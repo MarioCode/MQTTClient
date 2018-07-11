@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2AFC6255D203BA5BC8C2386E /* Pods_MQTTClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717CEA3BED402F1971D45C08 /* Pods_MQTTClient.framework */; };
+		8D0DA9E320F5F97800FFAEC0 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DA9E220F5F97800FFAEC0 /* SettingsTableViewController.swift */; };
+		8D0DA9E520F5FC4000FFAEC0 /* MqttSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0DA9E420F5FC4000FFAEC0 /* MqttSettings.swift */; };
 		8D59DA2720F4ACF80042E4AC /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D59DA2620F4ACF80042E4AC /* MessageTableViewCell.swift */; };
 		8D9549F020F4C15800C883DB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9549EF20F4C15800C883DB /* Extension.swift */; };
 		8DD7CA4220F37DAD00101065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7CA4120F37DAD00101065 /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 		0DC4E963E018009D36C9CF61 /* Pods-MQTTClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTClient/Pods-MQTTClient.release.xcconfig"; sourceTree = "<group>"; };
 		717CEA3BED402F1971D45C08 /* Pods_MQTTClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MQTTClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAA70F1B6F9002094F86EA2 /* Pods-MQTTClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MQTTClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MQTTClient/Pods-MQTTClient.debug.xcconfig"; sourceTree = "<group>"; };
+		8D0DA9E220F5F97800FFAEC0 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		8D0DA9E420F5FC4000FFAEC0 /* MqttSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttSettings.swift; sourceTree = "<group>"; };
 		8D59DA2620F4ACF80042E4AC /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		8D9549EF20F4C15800C883DB /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8DD7CA3E20F37DAD00101065 /* MQTTClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MQTTClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0DA9E620F5FC4C00FFAEC0 /* MqttManager */ = {
+			isa = PBXGroup;
+			children = (
+				8DD7CA5320F388CC00101065 /* MqttManager.swift */,
+				8D0DA9E420F5FC4000FFAEC0 /* MqttSettings.swift */,
+			);
+			path = MqttManager;
+			sourceTree = "<group>";
+		};
 		8D9549F120F4E16300C883DB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +92,10 @@
 			children = (
 				8DD7CA4120F37DAD00101065 /* AppDelegate.swift */,
 				8DD7CA4320F37DAD00101065 /* MainViewController.swift */,
-				8DD7CA5320F388CC00101065 /* MqttManager.swift */,
 				8D9549EF20F4C15800C883DB /* Extension.swift */,
 				8D59DA2620F4ACF80042E4AC /* MessageTableViewCell.swift */,
+				8D0DA9E220F5F97800FFAEC0 /* SettingsTableViewController.swift */,
+				8D0DA9E620F5FC4C00FFAEC0 /* MqttManager */,
 				8D9549F120F4E16300C883DB /* Resources */,
 				8DD7CA4D20F37DAF00101065 /* Info.plist */,
 			);
@@ -228,8 +242,10 @@
 			files = (
 				8D9549F020F4C15800C883DB /* Extension.swift in Sources */,
 				8DD7CA4420F37DAD00101065 /* MainViewController.swift in Sources */,
+				8D0DA9E320F5F97800FFAEC0 /* SettingsTableViewController.swift in Sources */,
 				8D59DA2720F4ACF80042E4AC /* MessageTableViewCell.swift in Sources */,
 				8DD7CA5420F388CC00101065 /* MqttManager.swift in Sources */,
+				8D0DA9E520F5FC4000FFAEC0 /* MqttSettings.swift in Sources */,
 				8DD7CA4220F37DAD00101065 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
